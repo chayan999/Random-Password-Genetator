@@ -1,17 +1,20 @@
 const btnEl = document.querySelector('.btn');
 const copyEl = document.querySelector('.far');
 const inputEl = document.getElementById('input');
-const alartEl = document.querySelector('.alert-container')
+const alartEl = document.querySelector('.alert-container');
+
 btnEl.addEventListener('click', () => {
     const passwordChars = '0123456789abcdefghijklmnopqrstuvwxtz!@#$%^&*()_+?:{}[]ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     const passLangth = 14;
-    let generatePass = ''
+    let generatePass = '';
 
     for (let i = 0; i < passLangth; i++) {
         const randomNum = Math.floor(Math.random() * passwordChars.length);
-        console.log(randomNum);
-        generatePass += passwordChars.substring(randomNum, randomNum + 1)
+
+        generatePass += passwordChars.substring(randomNum, randomNum + 1);
+
     };
+
     inputEl.value = generatePass;
     alartEl.innerText = generatePass + ' Copide';
 
