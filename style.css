@@ -64,7 +64,7 @@ body {
 .alert-container {
     position: fixed;
     height: 50px;
-    width: 200px;
+    width: 250px;
     background: lightgreen;
     right: 20px;
     bottom: 20px;
@@ -72,6 +72,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .active.alert-container {
